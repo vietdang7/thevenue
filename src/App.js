@@ -6,9 +6,9 @@ import Header from './components/header_footer/Header'
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <div className="App" style={{background: 'cornflowerblue', height:'2500px'}}>
         <Header/>
-       <p>HEoool</p>
+       
       </div>
     );
   }
