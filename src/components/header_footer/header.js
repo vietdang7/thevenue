@@ -13,6 +13,23 @@ export default class Header extends Component {
     headerShow: false
   }
 
+  componentDidMount(){
+    window.addEventListener('scroll', this.handleScroll)
+  }
+
+  handleScroll = () => {
+    if (window.scrollY === 0) {
+      this.setState({
+        headerShow: false
+      })
+    } else {
+      this.setState({
+        headerShow: true
+      })
+    }
+    
+  } 
+  
   toggleDrawer = (value) => {
     this.setState({
       drawerOpen: value
