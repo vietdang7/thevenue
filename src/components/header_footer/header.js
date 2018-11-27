@@ -36,7 +36,7 @@ export default class Header extends Component {
           <IconButton
             aria-label="Menu"
             color="inherit"
-            onClick={()=> console.log('open')}
+            onClick={()=> this.toggleDrawer(true)}
           >
             
             <MenuIcon/>
