@@ -12,6 +12,12 @@ export default class Header extends Component {
     drawerOpen: false
   }
 
+  toggleDrawer = (value) => {
+    this.setState({
+      drawerOpen: value
+    })
+  }
+
   render() {
     return (
       <AppBar
